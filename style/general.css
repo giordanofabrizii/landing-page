@@ -7,6 +7,8 @@
     font-family: 'WorkSans';
     src: url('../fonts/WorkSans-Regular.woff') format('woff'),
          url('../fonts/WorkSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 *{
@@ -26,10 +28,20 @@
 
 #container{
     max-width: 120rem;
+    max-height: 60rem;
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
     padding: 1rem;
     display: flex;
     flex-direction: row;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
