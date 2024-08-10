@@ -19,12 +19,15 @@
 }
 
 h1{
-    margin: 2rem 0;
     font-size: 48px;
 }
 
 h2{
     font-size: 32px;
+}
+
+#person h1{
+    margin: 2rem 0;
 }
 
 aside{
@@ -94,16 +97,19 @@ li img {
     height: 80%;
 }
 
-#projects h2{
-    font-size: 40px;
+#projects h1{
     margin-bottom: .4rem;
 }
 
-h2 > span{
+#projects p{
+    font-size: 20px;
+}
+
+h1 > span{
     transition: all .2s linear;
 }
 
-#projects:hover > article > h2 > span{
+#projects:hover > article > h1 > span{
     margin-left: 5px;
 }
 
