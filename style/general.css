@@ -1,0 +1,25 @@
+:root{
+    --primary: #0d0d0d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--primary);
+}
+
+#container{
+    max-width: 120rem;
+    width: 100vw;
+    height: 10rem;
+    margin: 0 auto;
+
+    padding: 1rem;
+}
