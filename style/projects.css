@@ -1,3 +1,27 @@
+.root{
+    overflow: scroll;
+}
+
+nav{
+   height: 3rem; 
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav li{
+    margin: 0 1rem;
+}
+
+nav li.active{
+    text-decoration: underline;
+}
+
 article{
     width: 100%;
 }
@@ -37,16 +61,30 @@ article .text{
     padding-left: 6rem;
 }
 
+.text h1{
+    font-size: 36px;
+}
+
 article ul{
     display: flex;
     flex-direction: row;
+    margin: 1rem 0 1.5rem 0;
+}
+
+article ul li{
+    margin-right: .7rem;
 }
 
 article .image{
     align-items: center;
 }
 
-article img{
+article .image img{
     height: 100%;
     width: max-content;
+    transition: transform .2s linear;
+}
+
+article:hover .image img{
+    transform: scale(1.05);
 }
