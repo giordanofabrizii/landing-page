@@ -1,0 +1,52 @@
+article{
+    width: 100%;
+}
+
+article:nth-child(2n+1){
+    background-color: #0d0d0d;
+}
+
+article:nth-child(2n){
+    background-color: #464545;
+}
+
+.delimiter{
+    max-width: 120rem;
+    height: 30rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 5rem 3rem;
+    justify-content: space-around;
+}
+
+article:nth-child(2n) .delimiter{
+    flex-direction: row-reverse;
+}
+
+article section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article .text{
+    padding-left: 6rem;
+}
+
+article ul{
+    display: flex;
+    flex-direction: row;
+}
+
+article .image{
+    align-items: center;
+}
+
+article img{
+    height: 100%;
+    width: max-content;
+}
