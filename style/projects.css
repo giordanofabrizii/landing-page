@@ -15,7 +15,13 @@ nav ul{
 }
 
 nav li{
-    margin: 0 1rem;
+    padding: .2rem 1rem;
+    transition: all .1s linear;
+}
+
+nav li:hover{
+    transform: scale(1.2);
+    text-shadow: 0px 0px 3px white;
 }
 
 nav li.active{
