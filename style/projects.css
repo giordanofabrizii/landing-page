@@ -27,11 +27,11 @@ article{
 }
 
 article:nth-child(2n+1){
-    background-color: #0d0d0d;
+    background-color: var(--primary);
 }
 
 article:nth-child(2n){
-    background-color: #464545;
+    background-color: var(--secondary);
 }
 
 .delimiter{
