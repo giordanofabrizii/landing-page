@@ -20,11 +20,10 @@
 
 body{
     background-color: var(--primary);
+    overflow-x: hidden; /* Nasconde l'overflow orizzontale */
 }
 
 .root{
-    width: 100vw;
-    height: 100vh;
     overflow: hidden;
     background-color: var(--primary);
     color: white;
