@@ -391,6 +391,11 @@ h1 > span{
         font-size: 30px;
     }
 
+    #contacts li img{
+        height: 16px;
+        width: 16px;
+    }
+
     #info {
         margin-top: 20px;
     }
