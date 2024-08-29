@@ -11,7 +11,7 @@
     padding: 1.5vw;
 }
 
-#person > img {
+#person img {
     width: 14vw;
     height: 14vw;
     border-radius: 65% 35% 57% 40%;
@@ -64,7 +64,6 @@ aside section{
 
 #contacts hr {
     width: 10vw;
-    height: auto;
 }
 
 #info{
@@ -73,7 +72,6 @@ aside section{
 
 #info hr {
     width: 5.5vw;
-    height: auto;
 }
 
 #info p{
@@ -130,4 +128,274 @@ h1 > span{
     display: flex;
     flex-direction: row;
     margin-top: .8vw;
+}
+
+/* ##################### */
+/* > MEDIA SCREEN */
+/* ##################### */
+
+@media screen and (max-width:1275px) {
+    .container{
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 3.5vw;
+    }
+    
+    h2{
+        font-size: 2.5vw;
+    }
+
+    #person{
+        width: 100%;
+    }
+
+    #person p{
+        font-size: 16px;
+    }
+
+    aside{
+        display: flex;
+        width: 100%;
+        margin-top: .8vw;
+    }
+
+    aside > *{
+        width: 50%;
+    }
+
+    #socials{
+        margin-right: .4vw;
+        height: 100%;
+    }
+
+    #projects{
+        margin-left: .4vw;
+        height: 100%;
+    }
+
+    #contacts hr {
+        width: 15vw;
+    }
+
+    #socials li{
+        font-size: 2vw;
+    }
+
+    #socials li img{
+        height: 2vw;
+        width: 2vw;
+    }
+
+    #info p{
+        font-size: 2vw;
+        margin: .5vw 0;
+    }
+
+    #projects > article {
+        height: 85%;
+    }
+
+    #projects p{
+        font-size: 1.3vw;
+    }    
+
+    #projects hr{
+        width: 33vw;
+    } 
+
+    img.logo{
+        height: 3vw;
+        width: 3vw;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #person img{
+        width: 140px;
+        height: 140px;
+    }
+
+    #person h1{
+        font-size: 44px;
+    }
+
+    #contacts h2,
+    #info h2{
+        font-size: 36px;
+    }
+
+    #contacts hr{
+        width: 230px;
+    }
+
+    #info hr{
+        width: 125px;
+    }
+
+    #contacts li{
+        margin: 20px 0;
+    }
+
+    #info p{
+        margin: 10px 0;
+    }
+
+    #projects h1{
+        font-size: 45px;
+    }
+
+    #projects p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    aside{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    aside > *{
+        width: 100%;
+        height: calc(50% - .4vw);
+    }
+
+    #projects{
+        margin-left: 0;
+        margin-bottom: .8vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #projects article{
+        height: 100%;
+    }
+
+    #skills hr{
+        display: none;
+    }
+
+    #skills{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #skills ul{
+        margin: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 95%;
+    }
+
+    img.logo{
+        height: 24px;
+        width: 24px;
+    }
+
+    #socials {
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        height: calc(50% - .4vw);
+        padding: 20px;
+        margin: 0;
+    }
+
+    #contacts{
+        margin-right: 25%;
+    }
+
+    #info{
+        margin: 0;
+    }
+
+    #socials h2{
+        font-size: 24px;
+    }
+
+    #contacts hr{
+        width: 160px;
+    }
+
+    #info hr{
+        width: 80px;
+    }
+
+    #contacts li,
+    #info p{
+        font-size: 18px;
+        margin: 12px 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .root{
+        overflow: scroll;
+    }
+
+    .container{
+        height: fit-content;
+    }
+
+    aside{
+        height: fit-content;
+    }
+
+    #person,
+    #projects,
+    #socials{
+        padding: 12px;
+    }
+
+    #projects{
+        flex-direction: column;
+    }
+
+    #projects article{
+        height: 220px;
+    }
+
+    #skills{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #skills ul{
+        flex-direction: row;
+    }
+
+    #skills li{
+        margin: 0 4px;
+    }
+
+    #skills hr{
+        display: block;
+        margin-bottom: 10px;
+        width: 320px;
+    }
+
+    img.logo{
+        height: 28px;
+        width: 28px;
+    }
+
+    #socials{
+        flex-direction: column;
+    }
+
+    #contacts h2,
+    #info h2{
+        font-size: 30px;
+    }
+
+    #info {
+        margin-top: 20px;
+    }
+
+    #info p{
+        margin: 8px 0;
+    }
 }
