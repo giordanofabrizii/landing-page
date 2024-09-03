@@ -42,7 +42,6 @@ article:nth-child(2n){
 
 .delimiter{
     max-width: 120rem;
-    height: 30rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -86,11 +85,44 @@ article .image{
 }
 
 article .image img{
-    height: 100%;
-    width: max-content;
+    width: 40vw;
+    max-width: 35rem;
     transition: transform .2s linear;
 }
 
 article:hover .image img{
     transform: scale(1.05);
+}
+
+@media screen and (max-width:992px) {
+    .delimiter{
+        flex-direction: column;
+    }
+
+    article:nth-child(2n) .delimiter{
+        flex-direction: column;
+    }
+
+    article section{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    article .text{
+        padding-left: 0;
+    }
+
+    article .image img{
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .delimiter{
+        padding: 3rem 1rem;
+    }
+
+    article .image img{
+        width: 80vw;
+    }
 }
