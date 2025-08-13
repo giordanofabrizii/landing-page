@@ -109,7 +109,6 @@
             left: 50%;
             transform: translateX(-50%) translateY(10px);
             background: rgba(0, 0, 0, 0.9);
-            color: white;
             padding: 8px 12px;
             border-radius: 6px;
             font-size: 0.8rem;
@@ -461,5 +460,9 @@ main#esperienza {
 
   #contacts {
     padding: 2rem 0 !important;
+  }
+
+  #skill-grid {
+    padding: 0 2rem !important;
   }
 }
