@@ -1,92 +1,243 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
 
     <!-- ? STYLESHEET -->
-    <link rel="stylesheet" href="./style/general.css"> <!-- ! general css stylesheet -->
-    <link rel="stylesheet" href="./style/index.css">   <!-- ! page's stylesheet -->
+    <link rel="stylesheet" href="./style/general.css" />
+    <!-- ! general css stylesheet -->
+    <link rel="stylesheet" href="./style/index.css" />
+    <!-- ! page's stylesheet -->
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="./img/favicon.ico">
-</head>
-<body>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+  </head>
+  <body>
     <div class="root">
-        <div class="container">
-            <section id="person">
-                <img src="./img/profile-picture.jpeg" alt="profile picture">
-                <h1>Giordano Fabrizi</h1>
-                <p>Sono uno sviluppatore web junior in continua ricerca di nuove sfide da affrontare e tecnologie da studiare per accrescere il mio bagaglio di competenze. Il mio focus &egrave; scrivere e mantenere un codice pulito ed ordinato per una manutenzione facilitata.</p>
-            </section>
-            <aside>
-                <section id="socials">
-                    <div id="contacts">
-                        <h2>Contatti</h2>
-                        <hr>
-                        <ul>
-                            <li>
-                                <img class="invert" src="./img/email-logo.png" alt="">giordanofabrizi@gmail.com
-                            </li>
-                            <li>
-                                <a href="https://github.com/giordanofabrizii"><img class="invert" src="./img/github-logo.png" alt="">@giordanofabrizii</a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/giordanofabrizi/"><img class="invert" src="./img/linkedin-logo.png" alt="">Giordano Fabrizi</a>
-                            </li>
-                            <!-- <li>
-                                <a href="https://www.instagram.com/giordanofabrizii/"><img class="invert" src="./img/instagram-logo.png" alt="">@giordanofabrizii</a>
-                            </li> -->
-                        </ul>    
-                    </div>
-                    <div id="info">
-                        <h2>Info</h2>
-                        <hr>
-                        <p>Roma, IT</p>
-                        <p>21</p>
-                    </div>
-                </section>
-                <a href="./progetti">
-                    <section id="projects">
-                        <article>
-                            <h1>Progetti <span>>></span></h1>
-                            <p>Dai un'occhiata a qualche mio lavoro ;)</p>
-                        </article>
-                        <div id="skills">
-                            <hr>
-                            <ul>
-                                <li>
-                                    <img class="logo" src="./img/html-logo.png" alt="html logo">
-                                </li>
-                                <li>
-                                    <img class="logo" src="./img/css-logo.png" alt="css logo">
-                                </li>
-                                <li>
-                                    <img class="logo" src="./img/js-logo.png" alt="js logo">
-                                </li>
-                                <li>
-                                    <img class="logo" src="./img/vue-logo.png" alt="vue logo">
-                                </li>
-                                <li>
-                                    <img class="logo" src="./img/sass-logo.png" alt="sass logo">
-                                </li>
-                                <li>
-                                    <img class="invert logo" src="./img/php-logo.png" alt="php logo">
-                                </li>
-                                <li>
-                                    <img class="invert logo" src="./img/mysql-logo.png" alt="mysql logo">
-                                </li>
-                                <li>
-                                    <img class="invert logo" src="./img/laravel-logo.png" alt="laravel logo">
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
+      <div class="container">
+        <header id="header" class="snap-section"></header>
+        <div id="jumbotron" class="snap-section">
+          <main>
+            <img id="propic" src="./img/profile-picture-nobg.png" alt="Profile picture" />
+            <div class="text">
+              <hr />
+              <h1>Giordano Fabrizi</h1>
+              <h3>22, Roma</h3>
+              <p>
+                Sono uno sviluppatore web junior in continua ricerca di nuove sfide da affrontare e tecnologie da
+                studiare per accrescere il mio bagaglio di competenze. Il mio focus è scrivere e mantenere un codice
+                pulito ed ordinato per una manutenzione facilitata.
+              </p>
+            </div>
+            <div class="right">
+              <div id="contacts">
+                <a
+                  class="link"
+                  href="https://linkedin.com/in/giordanofabrizi"
+                  data-tooltip="Vai a LinkedIn"
+                  target="_blank"
+                >
+                  <img src="./img/linkedin.png" class="invert" alt="Linkedin logo" />
+                  <h3>Giordano Fabrizi</h3>
                 </a>
-            </aside>
+                <a class="link" href="https://github.com/giordanofabrizii" data-tooltip="Vai a GitHub" target="_blank">
+                  <img src="./img/github.png" class="invert" alt="Github logo" />
+                  <h3>@giordanofabrizii</h3>
+                </a>
+                <a class="link" href="mailto:giordanofabrizi@gmail.com" data-tooltip="Apri email">
+                  <img src="./img/email.png" class="invert" alt="Email logo" />
+                  <h3>giordanofabrizi@gmail.com</h3>
+                </a>
+              </div>
+            </div>
+          </main>
         </div>
+
+        <main id="esperienza" class="snap-section">
+          <h1>Esperienza</h1>
+
+          <article>
+            <section class="left">
+              <h2>Sviluppatore Web, <span> NATLA</span></h2>
+              <div class="logos">
+                <span class="typescript">
+                  <img src="./img/typescript.png" alt="Typescript logo" />
+                </span>
+                <span class="react">
+                  <img src="./img/react.png" alt="React logo" />
+                </span>
+                <span class="tailwind">
+                  <img src="./img/tailwind.png" alt="Tailwind logo" />
+                </span>
+                <span class="mantine">
+                  <img src="./img/mantine.png" alt="Mantine logo" />
+                </span>
+                <span class="php invert">
+                  <img src="./img/php.png" alt="Php logo" />
+                </span>
+                <span class="mysql invert">
+                  <img src="./img/mysql.png" alt="Mysql logo" />
+                </span>
+              </div>
+            </section>
+            <section class="right">
+              <h3>Marzo 2025 - Presente</h3>
+              <p>
+                Progettazione e sviluppo di soluzioni IT per clienti Enterprise. Collaboro alla definizione delle
+                specifiche tecniche, al design architetturale, all'implementazione di nuove funzionalità e
+                all’ottimizzazione delle performance delle applicazioni esistenti. Utilizzo framework moderni,
+                integrazione di API e pratiche DevOps per garantire qualità del codice, manutenibilità e scalabilità.
+              </p>
+            </section>
+          </article>
+
+          <hr />
+
+          <article>
+            <section class="left">
+              <h2>
+                Master - Sviluppo Web,
+                <span>Boolean Careers</span>
+              </h2>
+              <div class="logos">
+                <span class="html">
+                  <img src="./img/html.png" alt="Html logo" />
+                </span>
+                <span class="css">
+                  <img src="./img/css.png" alt="Css logo" />
+                </span>
+                <span class="javascript">
+                  <img src="./img/javascript.png" alt="Javascript logo" />
+                </span>
+                <span class="vue">
+                  <img src="./img/vue.png" alt="Vue logo" />
+                </span>
+                <span class="vite">
+                  <img src="./img/vite.png" alt="Vite logo" />
+                </span>
+                <span class="mysql invert">
+                  <img src="./img/mysql.png" alt="Mysql logo" />
+                </span>
+                <span class="php invert">
+                  <img src="./img/php.png" alt="Php logo" />
+                </span>
+                <span class="laravel invert">
+                  <img src="./img/laravel.png" alt="Laravel logo" />
+                </span>
+              </div>
+            </section>
+            <section class="right">
+              <h3>Marzo 2024 - Ottobre 2024</h3>
+              <p>
+                Corso di formazione per il Web Development di 700 ore dove ho imparato a gestire carichi di lavoro
+                intensivi, rispettare tempi di consegna e risolvere i problemi in autonomia
+              </p>
+            </section>
+          </article>
+
+          <hr />
+
+          <article>
+            <section class="left">
+              <h2>
+                Ing. Informatica,
+                <span>Tor Vergata</span>
+              </h2>
+              <div class="logos">
+                <span class="python">
+                  <img src="./img/python.png" alt="Python logo" />
+                </span>
+                <span class="arduino">
+                  <img src="./img/arduino.png" alt="Arduino logo" />
+                </span>
+              </div>
+            </section>
+            <section class="right">
+              <h3>Settembre 2022 - Dicembre 2024 (Non concluso)</h3>
+              <p>
+                Percorso di studi in cui ho approfondito la mia passione per matematica e fisica e accresciuto quella
+                per la programmazione. In questo periodo ho perfezionato il mio metodo di studio e preso consapevolezza
+                della mia voglia di acquisire conoscenze
+              </p>
+            </section>
+          </article>
+
+          <hr />
+
+          <article>
+            <section class="left">
+              <h2>Sviluppatore Web, <span> Freelance </span></h2>
+              <div class="logos">
+                <span class="html">
+                  <img src="./img/html.png" alt="Html logo" />
+                </span>
+                <span class="css">
+                  <img src="./img/css.png" alt="Css logo" />
+                </span>
+                <span class="javascript">
+                  <img src="./img/javascript.png" alt="Javascript logo" />
+                </span>
+                <span class="vue">
+                  <img src="./img/vue.png" alt="Vue logo" />
+                </span>
+                <span class="vite">
+                  <img src="./img/vite.png" alt="Vite logo" />
+                </span>
+              </div>
+            </section>
+            <section class="right">
+              <h3>Luglio 2023 - Febbraio 2024</h3>
+              <p>
+                Sviluppo di piccole web-app games per clienti privati, tra cui giochi come tris (TicTacToe) e altri
+                casual game personalizzati. Ho curato l’intero ciclo di vita delle applicazioni, dalla raccolta dei
+                requisiti alla pubblicazione online, con particolare attenzione alla user experience e alla
+                compatibilità cross-device.
+              </p>
+            </section>
+          </article>
+
+          <hr />
+        </main>
+
+        <section id="skills" class="snap-section">
+          <h1>Skills</h1>
+
+          <div id="skill-grid">
+            <article>
+              <img src="./img/problem-solving.png" class="invert" alt="logo" />
+              <h3>Problem Solving</h3>
+              <p>
+                Risolvo problemi complessi trasformandoli in soluzioni semplici, efficienti e scalabili per ogni
+                progetto web.
+              </p>
+            </article>
+            <article>
+              <img src="./img/team-work.png" class="invert" alt="logo" />
+              <h3>Lavoro in team</h3>
+              <p>
+                Collaboro in modo proattivo, favorendo comunicazione chiara e obiettivi condivisi per il successo
+                collettivo.
+              </p>
+            </article>
+            <article>
+              <img src="./img/flexibility.png" class="invert" alt="logo" />
+              <h3>Flessibilità</h3>
+              <p>Mi adatto rapidamente a nuove tecnologie e requisiti, mantenendo alta qualità e tempi di consegna.</p>
+            </article>
+            <article>
+              <img src="./img/learning.png" class="invert" alt="logo" />
+              <h3>Apprendimento</h3>
+              <p>
+                Aggiorno costantemente le mie competenze esplorando linguaggi, framework e best practice emergenti nel web.
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
     </div>
-    
-</body>
+
+    <script src="./js/common.js"></script>
+  </body>
 </html>
