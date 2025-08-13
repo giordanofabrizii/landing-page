@@ -65,6 +65,33 @@ article:hover .image img{
     transform: scale(1.05);
 }
 
+.delimiter li{
+    position: relative;
+
+    &:hover::after{
+        visibility: visible;
+        opacity: 1;
+    }
+/* 
+    &:hover{
+        background-color: red;
+    } */
+
+}
+.delimiter li::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 8px 12px;
+    border-radius: 6px;
+    z-index: 100;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
 @media screen and (max-width:992px) {
     .delimiter{
         flex-direction: column;
