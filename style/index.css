@@ -462,4 +462,8 @@ main#esperienza {
   #contacts {
     padding: 2rem 0 !important;
   }
+
+  #skill-grid {
+    padding: 0 2rem !important;
+  }
 }
