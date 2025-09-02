@@ -30,3 +30,18 @@ fetch('./partials/header.html')
   .catch((err) => {
     console.error('Errore nel caricamento dell’header:', err)
   })
+
+const btn = document.getElementById('scrollTopBtn')
+const container = document.querySelector('.container')
+
+container.addEventListener('scroll', () => {
+  if (container.scrollTop > 200) {
+    btn.style.display = 'flex'
+  } else {
+    btn.style.display = 'none'
+  }
+})
+
+btn.addEventListener('click', () => {
+  container.scrollTo({ top: 0, behavior: 'smooth' })
+})
