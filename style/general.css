@@ -3,7 +3,7 @@
   --secondary: rgb(25, 25, 25);
   --tertiary: rgb(42, 42, 42);
   --wb: #fff;
-  --border: rgba(255, 255, 255, 0.2)
+  --border: rgba(255, 255, 255, 0.2);
 }
 
 .dark {
@@ -72,6 +72,8 @@ body {
   max-width: 100rem;
   margin: 0 auto;
   padding: 0.8vw;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 ul {
@@ -99,7 +101,7 @@ header {
   max-width: 100rem;
   margin: 0 auto;
 
-  h1{
+  h1 {
     font-family: monospace;
   }
 
@@ -151,4 +153,37 @@ header {
   img {
     height: 30px;
   }
+}
+
+/* ############# */
+/* Scroll to top */
+/* ############# */
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+#scrollTopBtn img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+}
+
+#scrollTopBtn:hover {
+  background: #000;
 }
