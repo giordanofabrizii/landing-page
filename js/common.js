@@ -32,7 +32,7 @@ fetch('./partials/header.html')
   })
 
 const btn = document.getElementById('scrollTopBtn')
-const container = document.querySelector('.container')
+const container = document.querySelector('.scrollTopContainer')
 
 container.addEventListener('scroll', () => {
   if (container.scrollTop > 200) {
