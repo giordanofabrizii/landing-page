@@ -1,0 +1,128 @@
+.root{
+    overflow: scroll;
+}
+
+nav{
+   height: 3rem; 
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav li{
+    padding: .2rem 1rem;
+    transition: all .1s linear;
+}
+
+nav li:hover{
+    transform: scale(1.2);
+    text-shadow: 0px 0px 3px white;
+}
+
+nav li.active{
+    text-decoration: underline;
+}
+
+article{
+    width: 100%;
+}
+
+article:nth-child(2n+1){
+    background-color: var(--primary);
+}
+
+article:nth-child(2n){
+    background-color: var(--secondary);
+}
+
+.delimiter{
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 5rem 3rem;
+    justify-content: space-around;
+}
+
+article:nth-child(2n) .delimiter{
+    flex-direction: row-reverse;
+}
+
+article section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article .text{
+    padding-left: 6rem;
+}
+
+.text h1{
+    font-size: 36px;
+}
+
+article ul{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 1.5rem 0;
+}
+
+article ul li{
+    margin-right: .7rem;
+}
+
+article .image{
+    align-items: center;
+}
+
+article .image img{
+    width: 40vw;
+    max-width: 35rem;
+    transition: transform .2s linear;
+}
+
+article:hover .image img{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:992px) {
+    .delimiter{
+        flex-direction: column;
+    }
+
+    article:nth-child(2n) .delimiter{
+        flex-direction: column;
+    }
+
+    article section{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    article .text{
+        padding-left: 0;
+    }
+
+    article .image img{
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .delimiter{
+        padding: 3rem 1rem;
+    }
+
+    article .image img{
+        width: 80vw;
+    }
+}

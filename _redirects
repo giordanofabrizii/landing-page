@@ -1,1 +1,3 @@
 /progetti /pages/projects 200
+https://v1.giordanofabrizi.com/*   /v1/:splat   200
+https://v1.giordanofabrizi.com/    /v1/index.html   200
