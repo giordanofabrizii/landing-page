@@ -1,0 +1,54 @@
+:root{
+    --primary: #0d0d0d;
+    --secondary: #464545;
+}
+
+/* ! FONT */
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../fonts/WorkSans-Regular.woff') format('woff'),
+         url('../fonts/WorkSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary);
+    overflow-x: hidden; /* Nasconde l'overflow orizzontale */
+}
+
+.root{
+    overflow: hidden;
+    background-color: var(--primary);
+    color: white;
+    font-family: 'WorkSans';
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: .8vw;
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img.logo{
+    width: 4vh;
+    height: 4vh;
+}
